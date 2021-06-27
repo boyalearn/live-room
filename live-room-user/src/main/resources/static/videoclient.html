@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>使用video.js实现rtmp流的直播播放</title>
-    <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+    <link href="./css/video-js.min.css" rel="stylesheet">
+    <script src="./js/video.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/videojs-flash@2/dist/videojs-flash.min.js"></script>
+
+
 </head>
 
 <body>
 <video id='myvideo' width=960 height=540 class="video-js vjs-default-skin" controls>
-    <source src="rtmp://192.168.0.102:1935/live/room">
+    <source src="rtmp://192.168.0.100:1935/live/room">
 </video>
 <script>
     window.onload = function() {
