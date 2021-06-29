@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>live-room-server-flazr</module>
+        <module>live-room-server-rtmp</module>
     </modules>
 
 

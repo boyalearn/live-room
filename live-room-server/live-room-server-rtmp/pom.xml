@@ -9,23 +9,22 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>live-room-server-flazr</artifactId>
+    <artifactId>live-room-server-rtmp</artifactId>
 
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.65.Final</version>
+        </dependency>
         <dependency>
             <groupId>com.flazr</groupId>
             <artifactId>flazr</artifactId>
             <version>0.7-snv20100505</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>io.netty</groupId>
-                    <artifactId>netty-all</artifactId>
-                </exclusion>
-            </exclusions>
+            <scope>compile</scope>
         </dependency>
-
-
     </dependencies>
 
     <repositories>
